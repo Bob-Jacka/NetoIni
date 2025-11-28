@@ -46,7 +46,7 @@ void Parser_n::Parser::parse_lines() const {
  * @return generic parameter value from section
  */
 template<typename T>
-    requires std::integral<T> || libio::type_constrains::is_string<T>
+    requires std::is_integral_v<T> || libio::type_constrains::is_string<T>
 T Parser_n::Parser::get_value(const std::string &section_param) const {
     if (section_param.contains(".")) {
         const auto split_line = libio::string::split(section_param, "."); //0 - name of the section and 1 - name of the value

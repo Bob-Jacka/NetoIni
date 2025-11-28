@@ -14,7 +14,7 @@ module;
 #include <vector>
 #include <sstream>
 
-// #define LIBIO_LIBIO_EXPERIMENTAL //uncomment this line to turn on LIBIO_EXPERIMENTAL library features
+// #define LIBIO_EXPERIMENTAL //uncomment this line to turn on LIBIO_EXPERIMENTAL library features
 
 #ifdef LIBIO_EXPERIMENTAL //define functions and include other libraries if LIBIO_EXPERIMENTAL tag is defined
 #include <filesystem>

@@ -28,8 +28,8 @@ namespace Parser_n {
         Parser(const Parser &) = delete;
 
         template<typename T>
-            requires std::integral<T> || libio::type_constrains::is_string<T>
-        [[nodiscard]] T get_value(const std::string &) const;
+            requires std::is_integral_v<T> || libio::type_constrains::is_string<T>
+        T get_value(const std::string &) const;
     };
 }
 
