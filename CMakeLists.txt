@@ -11,9 +11,6 @@ add_executable(NetoINI
         core/entities/Parser.hpp
         core/entities/Parser.cpp
 
-        core/entities/Section.hpp
-        core/entities/Section.cpp
-
         core/exceptions/ParserException.cpp
         core/exceptions/ParserException.hpp
 
